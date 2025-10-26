@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura AI - Careers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .jobs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .job-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .job-header {
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .job-title {
+            font-size: 1.8em;
+            color: #667eea;
+            margin-bottom: 8px;
+        }
+
+        .job-type {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        .job-description {
+            color: #555;
+            margin-bottom: 20px;
+            font-size: 1.05em;
+        }
+
+        .job-section {
+            margin-bottom: 20px;
+        }
+
+        .job-section h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .job-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .job-section ul li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .job-section ul li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .apply-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            margin-top: 10px;
+        }
+
+        .apply-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .jobs-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Laura AI</h1>
+            <p>Join our mission to revolutionize AI-powered solutions</p>
+        </header>
+
+        <div class="jobs-grid">
+            <!-- Job 1: Customer Success Manager -->
+            <div class="job-card">
+                <div class="job-header">
+                    <h2 class="job-title">Customer Success Manager</h2>
+                    <span class="job-type">Full-Time</span>
+                </div>
+
+                <p class="job-description">
+                    We're looking for a passionate Customer Success Manager to ensure our clients maximize value from Laura AI's platform and build long-lasting relationships.
+                </p>
+
+                <div class="job-section">
+                    <h3>Responsibilities</h3>
+                    <ul>
+                        <li>Own customer relationships and drive product adoption</li>
+                        <li>Conduct onboarding sessions and training for new clients</li>
+                        <li>Monitor customer health metrics and proactively address concerns</li>
+                        <li>Collaborate with product and engineering teams on feature requests</li>
+                        <li>Develop customer success strategies and playbooks</li>
+                    </ul>
+                </div>
+
+                <div class="job-section">
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li>3+ years of experience in customer success or account management</li>
+                        <li>Strong understanding of SaaS and AI technologies</li>
+                        <li>Excellent communication and problem-solving skills</li>
+                        <li>Experience with CRM tools and analytics platforms</li>
+                        <li>Bachelor's degree in Business, Marketing, or related field</li>
+                    </ul>
+                </div>
+
+                <a href="#" class="apply-button">Apply Now</a>
+            </div>
+
+            <!-- Job 2: COO -->
+            <div class="job-card">
+                <div class="job-header">
+                    <h2 class="job-title">Chief Operating Officer</h2>
+                    <span class="job-type">Full-Time</span>
+                </div>
+
+                <p class="job-description">
+                    Laura AI is seeking an experienced COO to lead our operations, drive organizational excellence, and scale our company to the next level of growth.
+                </p>
+
+                <div class="job-section">
+                    <h3>Responsibilities</h3>
+                    <ul>
+                        <li>Oversee day-to-day operations across all departments</li>
+                        <li>Develop and implement operational strategies aligned with company goals</li>
+                        <li>Optimize processes and systems for efficiency and scalability</li>
+                        <li>Manage budgets, forecasting, and financial planning</li>
+                        <li>Build and mentor high-performing teams</li>
+                        <li>Partner with CEO on strategic initiatives and company vision</li>
+                    </ul>
+                </div>
+
+                <div class="job-section">
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li>10+ years of operational leadership experience</li>
+                        <li>Proven track record of scaling tech companies</li>
+                        <li>Strong financial acumen and strategic thinking</li>
+                        <li>Experience in AI/ML or SaaS industry preferred</li>
+                        <li>MBA or equivalent advanced degree</li>
+                        <li>Exceptional leadership and communication skills</li>
+                    </ul>
+                </div>
+
+                <a href="#" class="apply-button">Apply Now</a>
+            </div>
+
+            <!-- Job 3: Backend Developer -->
+            <div class="job-card">
+                <div class="job-header">
+                    <h2 class="job-title">Backend Developer</h2>
+                    <span class="job-type">Full-Time</span>
+                </div>
+
+                <p class="job-description">
+                    Join our engineering team to build robust, scalable backend systems that power Laura AI's innovative AI solutions and serve millions of users.
+                </p>
+
+                <div class="job-section">
+                    <h3>Responsibilities</h3>
+                    <ul>
+                        <li>Design and develop scalable backend APIs and microservices</li>
+                        <li>Optimize database performance and data architecture</li>
+                        <li>Implement security best practices and data protection measures</li>
+                        <li>Collaborate with ML engineers to integrate AI models</li>
+                        <li>Write clean, maintainable code with comprehensive tests</li>
+                        <li>Participate in code reviews and technical discussions</li>
+                    </ul>
+                </div>
+
+                <div class="job-section">
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li>4+ years of backend development experience</li>
+                        <li>Proficiency in Python, Node.js, or Go</li>
+                        <li>Strong understanding of RESTful APIs and microservices</li>
+                        <li>Experience with SQL and NoSQL databases</li>
+                        <li>Familiarity with cloud platforms (AWS, GCP, or Azure)</li>
+                        <li>Knowledge of containerization and orchestration (Docker, Kubernetes)</li>
+                        <li>BS in Computer Science or equivalent experience</li>
+                    </ul>
+                </div>
+
+                <a href="#" class="apply-button">Apply Now</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Laura AI. All rights reserved.</p>
+            <p>Building the future of AI, one innovation at a time.</p>
+        </footer>
+    </div>
+</body>
+</html>
